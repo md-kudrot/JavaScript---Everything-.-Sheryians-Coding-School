@@ -75,4 +75,18 @@ let x = 12;
 
 // ei x variable er 1-69 number line obdi tdz.
 
+// hoisting impact per type
+//  hoisting : amra jokon varible banai tokon seta 2ta onse vag hoye jay. 1st onso coder pura opore sole jay and 2nd onso jekhane variable diclar kora hoyese sekhanei thake .
+//  er jonnoi diclar korar age amra variable ke call korle undefined output ase.
+
+// code demo:
+var a = 12;
+// ata 2ta vage vag hbe 
+// 1. var a = undefined ;
+// 2. a = 12;
+
+// 1 number sole jabe sobar opore mane 1numbner line.
+
+// akon  2-86 number line er majhe jekhanei console.loh(a) kora hbe output undefined hbe..
+
 
