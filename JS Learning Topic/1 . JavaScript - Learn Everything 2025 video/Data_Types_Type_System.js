@@ -99,5 +99,27 @@ console.log(true + false) // output : 1
 console.log(null + 1) //outptu : 1
 console.log(5 + "5") //output : 55
 console.log(!!undefined) //output : false // this is falsy falue 
+
+
+// common confusions: 1.why NaN is a number?
+// NaN holo faild number oparation. jar mane hosse: number ke amon kisur sate gun ba vag kora jeta math a possible na. jmn ("kudrot * 50" output = NaN) 
+
+
+// 2.common confusion? 
+// undefined vs null
+
+// undefined: 
+// demo:
+let m;
+console.log(m)
+// output:  undefined
+// karon ata js er default value
+
+let o = null;
+console.log(o);
+// output: null
+// variable ase but value deoya hoynai faka rakha hoyese
+
+
  
 
