@@ -89,4 +89,3 @@ var a = 12;
 
 // akon  2-86 number line er majhe jekhanei console.loh(a) kora hbe output undefined hbe..
 
-
