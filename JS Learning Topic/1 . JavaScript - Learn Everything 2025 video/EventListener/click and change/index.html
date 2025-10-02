@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click and change listener use in file </title>
+    <script src="click_change.js" defer></script>
+
+    <style>
+        * {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100VH;
+        }
+        .input{
+            display: none;
+        }
+        .button{
+            background-color: green;
+            padding: 0.5rem 3rem;
+            font-size: large;
+            border-radius: 20px;
+        }
+        .button:hover{
+            background-color: rgba(128, 255, 0, 0.377);
+        }
+
+    </style>
+
+
+</head>
+
+
+<body>
+    <div class="main">
+        <input class="input" type="file" placeholder="input you photo">
+        <div class="My_input">
+            <button class="button">Upload</button>
+        </div>
+    </div>
+</body>
+
+</html>
