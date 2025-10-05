@@ -5,6 +5,25 @@ const mail = document.querySelector("#mail")
 const mail_valid = document.querySelector("#mail_valid")
 const password = document.querySelector("#password")
 const pas_sms = document.querySelector("#pas_sms")
+const showPws= document.querySelector("#showPws")
+
+
+
+showPws.addEventListener("click",()=>{
+    let typeValue = password.type;
+
+    if(typeValue === "password"){
+        password.type = "text"
+    }
+    if(typeValue === "text"){
+        password.type = "password"
+    }
+
+    // short from of this code
+    // password.type = password.type === "password" ? "text" : "password";
+
+})
+
 
 
 form.addEventListener("submit", (dtls) => {
