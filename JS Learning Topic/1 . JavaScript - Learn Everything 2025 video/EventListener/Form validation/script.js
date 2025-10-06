@@ -13,10 +13,10 @@ showPws.addEventListener("click",()=>{
     let typeValue = password.type;
 
     if(typeValue === "password"){
-        password.type = "text"
+        password.type = "text";
     }
-    if(typeValue === "text"){
-        password.type = "password"
+    else{
+        password.type = "password";
     }
 
     // short from of this code
