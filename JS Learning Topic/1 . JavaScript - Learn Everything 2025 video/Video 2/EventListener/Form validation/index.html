@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Vaidation</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body style="background-color: black;">
+
+    <form style=" display: flex;  flex-direction: column; width: 15rem;">
+
+        <input id="name" required type="text" placeholder="Enter Your name">
+        <small id="right" style=" display: none;">
+            <p>You need to write valid name , at last 3 cracter</p>
+        </small>
+
+        <input id="mail" type="email" required placeholder="mail">
+        <small id="mail_valid" style="display: none; color: white;">write valid mail</small>
+
+        <input type="password" id="password" placeholder="password"> <span style="cursor: pointer;" id="showPws">👁️</span>
+        <small id="pas_sms" style=" display: none;">
+            <p>Password must be 8+ characters with uppercase, lowercase, number & special character.</p>
+        </small>
+        <input type="submit" placeholder="Submit">
+    </form>
+
+
+    <select>
+        <option value="male">Male</option>
+        <option value="feale">Female</option>
+        <option value="other">other</option>
+    </select>
+
+    <textarea placeholder="write some thing"></textarea>
+</body>
+
+</html>
