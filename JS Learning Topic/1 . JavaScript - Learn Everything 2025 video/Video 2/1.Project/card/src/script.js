@@ -49,16 +49,28 @@ const card = [
 
 const div = document.querySelector("#main")
 const input = document.querySelector("input")
+const errDiv = document.querySelector("#err-div")
+
 
 input.addEventListener("input", () => {
 
   const newCard = card.filter(arr => {
-    return arr.title.toLowerCase().startsWith(input.value.toLowerCase());
+    return arr.title.toLowerCase().startsWith(input.value.trim().toLowerCase());
   });
-  console.log(newCard)
+  if (newCard.length === 0) {
 
-  div.innerHTML = ''
-  newCard.forEach(showCard);
+    if (errDiv.innerHTML.trim() === "") {
+      errFunc();
+    }
+    div.innerHTML = '';
+
+  } else {
+    div.innerHTML = ''
+    newCard.forEach(showCard);
+    errDiv.innerHTML = " "
+  }
+  // console.log(newCard.length)
+
 
 })
 
@@ -84,4 +96,12 @@ function showCard(arr) {
 
   div2.append(h1, p);
   main.appendChild(div2);
+}
+
+function errFunc() {
+  const smsH1 = document.createElement("h1")
+  smsH1.className = "text-red-600 font-bold text-4xl bg-amber-500 p-4 rounded-2xl";
+  smsH1.textContent = "Card Not Found";
+
+  errDiv.appendChild(smsH1)
 }
